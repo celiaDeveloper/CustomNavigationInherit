@@ -1,0 +1,37 @@
+//
+//  Custom_prefix.pch
+//  CustomNavigationProject
+//
+//  Created by xudandan on 16/11/28.
+//  Copyright © 2016年 WuLian. All rights reserved.
+//
+
+#import <Availability.h>
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#endif
+
+#ifndef Custom_prefix_pch
+#define Custom_prefix_pch
+
+
+#define statusBarHeight 20.0f
+#define navigationHeight 44.0f
+
+
+// Nav View
+#define leftItemButtonTag 11111
+#define rightItemButtonTag 11211
+#define titleItemButtonTag 11311
+#define unreadCountItemTag 11411
+
+
+// Color
+#define XMColor(r, g, b, a)  [UIColor colorWithRed:r / 255.0f green:g / 255.0f blue:b / 255.0f alpha:a]
+#define COMMONBGColor XMColor(209, 203, 198, 1)
+#define NAVIBARBGColor XMColor(254, 208, 55, 1)
+
+
+#endif /* Custom_prefix_pch */
