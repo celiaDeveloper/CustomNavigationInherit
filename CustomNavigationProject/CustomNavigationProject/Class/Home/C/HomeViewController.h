@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ParentNaviViewController.h"
+#import "XDNavigationViewController.h"
 
-@interface MainViewController : ParentNaviViewController
+@interface HomeViewController : XDNavigationViewController
 
 
 @end

@@ -6,13 +6,24 @@
 //  Copyright © 2016年 WuLian. All rights reserved.
 //
 
-#import "ParentNaviViewController.h"
+#import "XDNavigationViewController.h"
 
-@interface ParentNaviViewController ()
+#define statusBarHeight 20.0f
+#define navigationHeight 44.0f
+
+#define leftItemButtonTag 11111
+#define rightItemButtonTag 11211
+#define titleItemButtonTag 11311
+
+
+@interface XDNavigationViewController ()
+
+// NavigationBar
+@property (strong, nonatomic) UIView *navBar;
 
 @end
 
-@implementation ParentNaviViewController
+@implementation XDNavigationViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -21,51 +32,52 @@
     self.automaticallyAdjustsScrollViewInsets = NO;
     
     // Backgound Color
-    self.view.backgroundColor = COMMONBGColor;
+    self.view.backgroundColor = [UIColor whiteColor];
     
 }
 
 // Nav Bar
-- (void)setMainNavigationBar:(BOOL)needBack
-{
+- (void)setMainNavigationBarHaveBack:(BOOL)back {
+    
     self.navBar = [[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, self.view.frame.size.width, navigationHeight + statusBarHeight)];
     self.navBar.backgroundColor = NAVIBARBGColor;
     [self.view addSubview:self.navBar];
     
     // Left
-    if (needBack)
-    {
+    if (back) {
+        
         [self initLeftNavigationBarWithImageName:@"icon_back_normal.png" highLightImageName:@"icon_back_pressed.png"];
     }
 }
 
+
 // (继承)Left Nav Button Press
-- (void)navLeftButtonItemPressed
-{
+- (void)navLeftButtonItemPressed {
+    
     [self.navigationController popViewControllerAnimated:YES];
 }
 
 // (继承)Right Nav Button Press
-- (void)navRightButtonItemPressed
-{
+- (void)navRightButtonItemPressed {
+    
 }
 
+
 // Nav Title Text
-- (void)initTitleViewWithText:(NSString *)title type:(NSInteger)type
-{
+- (void)initTitleViewWithText:(NSString *)title {
+    
     UIFont *titleFont = [UIFont boldSystemFontOfSize:20];
-    float titleWidth = [title sizeWithFont:titleFont].width;
+    float titleWidth= [title sizeWithAttributes:@{NSFontAttributeName: titleFont}].width;
     CGSize titleLabelSize = CGSizeMake(titleWidth > self.view.frame.size.width - 120.0f ? self.view.frame.size.width - 120.0f : titleWidth, 30.0f);
     CGRect titleFrame = CGRectMake((self.view.frame.size.width - titleLabelSize.width) / 2.0f, self.navBar.frame.origin.y + statusBarHeight + (self.navBar.frame.size.height - statusBarHeight - titleLabelSize.height) / 2.0f, titleLabelSize.width, titleLabelSize.height);
     
-    if ([self.navBar viewWithTag:titleItemButtonTag])
-    {
+    if ([self.navBar viewWithTag:titleItemButtonTag]) {
+        
         UILabel *titleLabel = (UILabel *)[self.navBar viewWithTag:titleItemButtonTag];
         titleLabel.frame = titleFrame;
         [titleLabel setText:title];
-    }
-    else
-    {
+    } else {
+        
         UILabel *titleLabel = [[UILabel alloc] init];
         titleLabel.tag = titleItemButtonTag;
         titleLabel.frame = titleFrame;
@@ -80,22 +92,21 @@
 }
 
 // 隐藏左Item
-- (void)hideLeftNavigationItem
-{
+- (void)hideLeftNavigationItem {
+    
     [self.navBar viewWithTag:leftItemButtonTag].hidden = YES;
 }
 
 // Left Nav Button
-- (void)initLeftNavigationBarWithImageName:(NSString *)imageName highLightImageName:(NSString *)highLightImageName
-{
-    if ([self.navBar viewWithTag:leftItemButtonTag])
-    {
+- (void)initLeftNavigationBarWithImageName:(NSString *)imageName highLightImageName:(NSString *)highLightImageName {
+    
+    if ([self.navBar viewWithTag:leftItemButtonTag]) {
+        
         UIButton *leftItemButton = (UIButton *)[self.navBar viewWithTag:leftItemButtonTag];
         [leftItemButton setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
         [leftItemButton setImage:[UIImage imageNamed:highLightImageName] forState:UIControlStateHighlighted];
-    }
-    else
-    {
+    } else {
+        
         UIButton *leftItemButton = [UIButton buttonWithType:UIButtonTypeCustom];
         leftItemButton.tag = leftItemButtonTag;
         leftItemButton.frame = CGRectMake(0.0f, self.navBar.frame.origin.y + statusBarHeight, 60.0f, self.navBar.frame.size.height - statusBarHeight);
@@ -108,16 +119,15 @@
 }
 
 // Right Nav Button
-- (void)initRightNavigationBarWithImageName:(NSString *)imageName highLightImageName:(NSString *)highLightImageName
-{
-    if ([self.navBar viewWithTag:rightItemButtonTag])
-    {
+- (void)initRightNavigationBarWithImageName:(NSString *)imageName highLightImageName:(NSString *)highLightImageName {
+    
+    if ([self.navBar viewWithTag:rightItemButtonTag]) {
+        
         UIButton *rightItemButton = (UIButton *)[self.navBar viewWithTag:rightItemButtonTag];
         [rightItemButton setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
         [rightItemButton setImage:[UIImage imageNamed:highLightImageName] forState:UIControlStateHighlighted];
-    }
-    else
-    {
+    } else {
+        
         UIButton *rightItemButton = [UIButton buttonWithType:UIButtonTypeCustom];
         rightItemButton.tag = rightItemButtonTag;
         rightItemButton.frame = CGRectMake(self.view.frame.size.width - 60.0f, self.navBar.frame.origin.y + statusBarHeight, 60.0f, self.navBar.frame.size.height - statusBarHeight);
@@ -130,15 +140,14 @@
 }
 
 // 从父View中获取Cell View
-- (UIView *)getParentCellView:(UIView *)view
-{
+- (UIView *)getParentCellView:(UIView *)view {
+    
     UIView *parentView = view.superview;
-    if ([parentView isKindOfClass:[UITableViewCell class]])
-    {
+    if ([parentView isKindOfClass:[UITableViewCell class]]) {
+        
         return parentView;
-    }
-    else
-    {
+    } else {
+        
         return [self getParentCellView:parentView];
     }
 }

@@ -6,22 +6,21 @@
 //  Copyright © 2016年 WuLian. All rights reserved.
 //
 
-#import "MainViewController.h"
+#import "HomeViewController.h"
 #import "SubViewController.h"
 
-@interface MainViewController ()
+@interface HomeViewController ()
 
 @end
 
-@implementation MainViewController
+@implementation HomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
     
-    [self setMainNavigationBar:NO];
+    [self setMainNavigationBarHaveBack:NO];
     
-    [self initTitleViewWithText:@"Main" type:0];
+    [self initTitleViewWithText:@"首页"];
     
     CGFloat btnWidth = 200;
     CGFloat btnHeight = 40;

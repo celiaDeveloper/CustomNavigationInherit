@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		274C740F1DEC2CCC00ED6353 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 274C740E1DEC2CCC00ED6353 /* main.m */; };
 		274C74121DEC2CCC00ED6353 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 274C74111DEC2CCC00ED6353 /* AppDelegate.m */; };
-		274C74151DEC2CCC00ED6353 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 274C74141DEC2CCC00ED6353 /* MainViewController.m */; };
 		274C741A1DEC2CCC00ED6353 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 274C74191DEC2CCC00ED6353 /* Assets.xcassets */; };
 		274C741D1DEC2CCC00ED6353 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 274C741B1DEC2CCC00ED6353 /* LaunchScreen.storyboard */; };
-		274C74271DEC4FF100ED6353 /* ParentNaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 274C74261DEC4FF100ED6353 /* ParentNaviViewController.m */; };
-		274C742D1DEC51DF00ED6353 /* icon_back_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 274C742B1DEC51DF00ED6353 /* icon_back_normal.png */; };
-		274C742E1DEC51DF00ED6353 /* icon_back_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 274C742C1DEC51DF00ED6353 /* icon_back_pressed.png */; };
-		274C74311DED042400ED6353 /* SubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 274C74301DED042400ED6353 /* SubViewController.m */; };
+		3FD68B6A1F39AE97003CC449 /* XDNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD68B641F39AE97003CC449 /* XDNavigationViewController.m */; };
+		3FD68B6B1F39AE97003CC449 /* icon_back_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FD68B681F39AE97003CC449 /* icon_back_normal.png */; };
+		3FD68B6C1F39AE97003CC449 /* icon_back_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FD68B691F39AE97003CC449 /* icon_back_pressed.png */; };
+		3FD68B721F39B0EB003CC449 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD68B711F39B0EB003CC449 /* MainTabBarController.m */; };
+		3FD68BAA1F3AA558003CC449 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD68BA71F3AA558003CC449 /* HomeViewController.m */; };
+		3FD68BAB1F3AA558003CC449 /* SubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD68BA91F3AA558003CC449 /* SubViewController.m */; };
+		3FD68BAE1F3AA5BC003CC449 /* PersonalCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD68BAD1F3AA5BC003CC449 /* PersonalCenterViewController.m */; };
+		3FD68BB11F3AA5CE003CC449 /* ShopCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD68BB01F3AA5CE003CC449 /* ShopCarViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,18 +26,24 @@
 		274C740E1DEC2CCC00ED6353 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		274C74101DEC2CCC00ED6353 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		274C74111DEC2CCC00ED6353 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		274C74131DEC2CCC00ED6353 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		274C74141DEC2CCC00ED6353 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		274C74191DEC2CCC00ED6353 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		274C741C1DEC2CCC00ED6353 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		274C741E1DEC2CCC00ED6353 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		274C74251DEC4FF100ED6353 /* ParentNaviViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParentNaviViewController.h; path = ParentNavi/ParentNaviViewController.h; sourceTree = "<group>"; };
-		274C74261DEC4FF100ED6353 /* ParentNaviViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ParentNaviViewController.m; path = ParentNavi/ParentNaviViewController.m; sourceTree = "<group>"; };
 		274C74281DEC50FF00ED6353 /* Custom_prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Custom_prefix.pch; sourceTree = "<group>"; };
-		274C742B1DEC51DF00ED6353 /* icon_back_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_back_normal.png; sourceTree = "<group>"; };
-		274C742C1DEC51DF00ED6353 /* icon_back_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_back_pressed.png; sourceTree = "<group>"; };
-		274C742F1DED042400ED6353 /* SubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubViewController.h; sourceTree = "<group>"; };
-		274C74301DED042400ED6353 /* SubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubViewController.m; sourceTree = "<group>"; };
+		3FD68B631F39AE97003CC449 /* XDNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDNavigationViewController.h; sourceTree = "<group>"; };
+		3FD68B641F39AE97003CC449 /* XDNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDNavigationViewController.m; sourceTree = "<group>"; };
+		3FD68B681F39AE97003CC449 /* icon_back_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_back_normal.png; sourceTree = "<group>"; };
+		3FD68B691F39AE97003CC449 /* icon_back_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_back_pressed.png; sourceTree = "<group>"; };
+		3FD68B701F39B0EB003CC449 /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
+		3FD68B711F39B0EB003CC449 /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
+		3FD68BA61F3AA558003CC449 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		3FD68BA71F3AA558003CC449 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		3FD68BA81F3AA558003CC449 /* SubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubViewController.h; sourceTree = "<group>"; };
+		3FD68BA91F3AA558003CC449 /* SubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubViewController.m; sourceTree = "<group>"; };
+		3FD68BAC1F3AA5BC003CC449 /* PersonalCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalCenterViewController.h; sourceTree = "<group>"; };
+		3FD68BAD1F3AA5BC003CC449 /* PersonalCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalCenterViewController.m; sourceTree = "<group>"; };
+		3FD68BAF1F3AA5CE003CC449 /* ShopCarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopCarViewController.h; sourceTree = "<group>"; };
+		3FD68BB01F3AA5CE003CC449 /* ShopCarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopCarViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,11 +78,8 @@
 			children = (
 				274C74101DEC2CCC00ED6353 /* AppDelegate.h */,
 				274C74111DEC2CCC00ED6353 /* AppDelegate.m */,
-				274C74131DEC2CCC00ED6353 /* MainViewController.h */,
-				274C74141DEC2CCC00ED6353 /* MainViewController.m */,
-				274C742F1DED042400ED6353 /* SubViewController.h */,
-				274C74301DED042400ED6353 /* SubViewController.m */,
-				274C74241DEC4FAF00ED6353 /* ParentNavi */,
+				3FD68B601F39AE97003CC449 /* Class */,
+				3FD68B671F39AE97003CC449 /* Resources */,
 				274C740D1DEC2CCC00ED6353 /* Supporting Files */,
 			);
 			path = CustomNavigationProject;
@@ -82,7 +88,6 @@
 		274C740D1DEC2CCC00ED6353 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				274C742A1DEC51DF00ED6353 /* Resources */,
 				274C74191DEC2CCC00ED6353 /* Assets.xcassets */,
 				274C741B1DEC2CCC00ED6353 /* LaunchScreen.storyboard */,
 				274C741E1DEC2CCC00ED6353 /* Info.plist */,
@@ -92,22 +97,112 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		274C74241DEC4FAF00ED6353 /* ParentNavi */ = {
+		3FD68B601F39AE97003CC449 /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				274C74251DEC4FF100ED6353 /* ParentNaviViewController.h */,
-				274C74261DEC4FF100ED6353 /* ParentNaviViewController.m */,
+				3FD68B611F39AE97003CC449 /* Custom */,
+				3FD68B651F39AE97003CC449 /* Main */,
+				3FD68BA01F3AA4AB003CC449 /* Home */,
+				3FD68BA21F3AA4AB003CC449 /* PersonalCenter */,
+				3FD68BA41F3AA4AB003CC449 /* ShopCar */,
 			);
-			name = ParentNavi;
+			path = Class;
 			sourceTree = "<group>";
 		};
-		274C742A1DEC51DF00ED6353 /* Resources */ = {
+		3FD68B611F39AE97003CC449 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
-				274C742B1DEC51DF00ED6353 /* icon_back_normal.png */,
-				274C742C1DEC51DF00ED6353 /* icon_back_pressed.png */,
+				3FD68B621F39AE97003CC449 /* CustomNavigation */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		3FD68B621F39AE97003CC449 /* CustomNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				3FD68B631F39AE97003CC449 /* XDNavigationViewController.h */,
+				3FD68B641F39AE97003CC449 /* XDNavigationViewController.m */,
+			);
+			path = CustomNavigation;
+			sourceTree = "<group>";
+		};
+		3FD68B651F39AE97003CC449 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3FD68B661F39AE97003CC449 /* C */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		3FD68B661F39AE97003CC449 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				3FD68B701F39B0EB003CC449 /* MainTabBarController.h */,
+				3FD68B711F39B0EB003CC449 /* MainTabBarController.m */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		3FD68B671F39AE97003CC449 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3FD68B681F39AE97003CC449 /* icon_back_normal.png */,
+				3FD68B691F39AE97003CC449 /* icon_back_pressed.png */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		3FD68BA01F3AA4AB003CC449 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3FD68BA11F3AA4AB003CC449 /* C */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3FD68BA11F3AA4AB003CC449 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				3FD68BA61F3AA558003CC449 /* HomeViewController.h */,
+				3FD68BA71F3AA558003CC449 /* HomeViewController.m */,
+				3FD68BA81F3AA558003CC449 /* SubViewController.h */,
+				3FD68BA91F3AA558003CC449 /* SubViewController.m */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		3FD68BA21F3AA4AB003CC449 /* PersonalCenter */ = {
+			isa = PBXGroup;
+			children = (
+				3FD68BA31F3AA4AB003CC449 /* C */,
+			);
+			path = PersonalCenter;
+			sourceTree = "<group>";
+		};
+		3FD68BA31F3AA4AB003CC449 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				3FD68BAC1F3AA5BC003CC449 /* PersonalCenterViewController.h */,
+				3FD68BAD1F3AA5BC003CC449 /* PersonalCenterViewController.m */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		3FD68BA41F3AA4AB003CC449 /* ShopCar */ = {
+			isa = PBXGroup;
+			children = (
+				3FD68BA51F3AA4AB003CC449 /* C */,
+			);
+			path = ShopCar;
+			sourceTree = "<group>";
+		};
+		3FD68BA51F3AA4AB003CC449 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				3FD68BAF1F3AA5CE003CC449 /* ShopCarViewController.h */,
+				3FD68BB01F3AA5CE003CC449 /* ShopCarViewController.m */,
+			);
+			path = C;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +237,7 @@
 					274C74091DEC2CCC00ED6353 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = A64J28E7HR;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -170,8 +266,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				274C741D1DEC2CCC00ED6353 /* LaunchScreen.storyboard in Resources */,
-				274C742D1DEC51DF00ED6353 /* icon_back_normal.png in Resources */,
-				274C742E1DEC51DF00ED6353 /* icon_back_pressed.png in Resources */,
+				3FD68B6B1F39AE97003CC449 /* icon_back_normal.png in Resources */,
+				3FD68B6C1F39AE97003CC449 /* icon_back_pressed.png in Resources */,
 				274C741A1DEC2CCC00ED6353 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -183,11 +279,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				274C74311DED042400ED6353 /* SubViewController.m in Sources */,
-				274C74271DEC4FF100ED6353 /* ParentNaviViewController.m in Sources */,
-				274C74151DEC2CCC00ED6353 /* MainViewController.m in Sources */,
+				3FD68B6A1F39AE97003CC449 /* XDNavigationViewController.m in Sources */,
+				3FD68BB11F3AA5CE003CC449 /* ShopCarViewController.m in Sources */,
+				3FD68B721F39B0EB003CC449 /* MainTabBarController.m in Sources */,
 				274C74121DEC2CCC00ED6353 /* AppDelegate.m in Sources */,
+				3FD68BAB1F3AA558003CC449 /* SubViewController.m in Sources */,
+				3FD68BAA1F3AA558003CC449 /* HomeViewController.m in Sources */,
 				274C740F1DEC2CCC00ED6353 /* main.m in Sources */,
+				3FD68BAE1F3AA5BC003CC449 /* PersonalCenterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +398,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = A64J28E7HR;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = CustomNavigationProject/Custom_prefix.pch;
@@ -307,6 +407,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Xdd.test.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CustomNavigationProject/Class/Main/C/CustomNavigationProject-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -314,6 +417,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = A64J28E7HR;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = CustomNavigationProject/Custom_prefix.pch;
@@ -322,6 +426,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Xdd.test.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CustomNavigationProject/Class/Main/C/CustomNavigationProject-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -344,6 +450,7 @@
 				274C74231DEC2CCC00ED6353 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "MainViewController.h"
+#import "MainTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -23,10 +23,12 @@
     _window.backgroundColor = [UIColor whiteColor];
     
     
-    MainViewController *main = [[MainViewController alloc] init];
-    UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:main];
-    navi.navigationBar.hidden = YES;
-    _window.rootViewController = navi;
+    MainTabBarController *tabBar = [[MainTabBarController alloc] init];
+    
+//    MainViewController *main = [[MainViewController alloc] init];
+//    UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:main];
+//    navi.navigationBar.hidden = YES;
+    _window.rootViewController = tabBar;
     [self.window makeKeyAndVisible];
     return YES;
 }

@@ -6,8 +6,8 @@
 //  Copyright © 2016年 WuLian. All rights reserved.
 //
 
-#import "ParentNaviViewController.h"
+#import "XDNavigationViewController.h"
 
-@interface SubViewController : ParentNaviViewController
+@interface SubViewController : XDNavigationViewController
 
 @end
